@@ -79,7 +79,6 @@
             this.Segredo.TabIndex = 2;
             this.Segredo.TabStop = false;
             this.Segredo.Text = "Segredo";
-            this.Segredo.Enter += new System.EventHandler(this.Segredo_Enter);
             // 
             // checkBox5
             // 
@@ -92,7 +91,7 @@
             this.checkBox5.Text = "Ok";
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.Visible = false;
-            this.checkBox5.CheckStateChanged += new System.EventHandler(this.checkBox5_CheckStateChanged);
+            this.checkBox5.CheckStateChanged += new System.EventHandler(this.CheckBox5_CheckStateChanged);
             // 
             // checkBox3
             // 
@@ -105,7 +104,7 @@
             this.checkBox3.Text = "Ok";
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.Visible = false;
-            this.checkBox3.CheckStateChanged += new System.EventHandler(this.checkBox3_CheckStateChanged);
+            this.checkBox3.CheckStateChanged += new System.EventHandler(this.CheckBox3_CheckStateChanged);
             // 
             // checkBox1
             // 
@@ -116,7 +115,7 @@
             this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Ok";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckStateChanged += new System.EventHandler(this.checkBox1_CheckStateChanged);
+            this.checkBox1.CheckStateChanged += new System.EventHandler(this.CheckBox1_CheckStateChanged);
             // 
             // label5
             // 
@@ -129,7 +128,7 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "5";
             this.label5.Visible = false;
-            this.label5.Click += new System.EventHandler(this.digito5_ValueChanged);
+            this.label5.Click += new System.EventHandler(this.Digito5_ValueChanged);
             // 
             // digito5
             // 
@@ -141,8 +140,8 @@
             this.digito5.TabIndex = 4;
             this.digito5.Value = 5;
             this.digito5.Visible = false;
-            this.digito5.Scroll += new System.EventHandler(this.digito5_ValueChanged);
-            this.digito5.ValueChanged += new System.EventHandler(this.digito5_ValueChanged_1);
+            this.digito5.Scroll += new System.EventHandler(this.Digito5_ValueChanged);
+            this.digito5.ValueChanged += new System.EventHandler(this.Digito5_ValueChanged_1);
             // 
             // label4
             // 
@@ -154,7 +153,7 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "5";
             this.label4.Visible = false;
-            this.label4.Click += new System.EventHandler(this.digito4_ValueChanged);
+            this.label4.Click += new System.EventHandler(this.Digito4_ValueChanged);
             // 
             // digito4
             // 
@@ -166,8 +165,8 @@
             this.digito4.TabIndex = 3;
             this.digito4.Value = 5;
             this.digito4.Visible = false;
-            this.digito4.Scroll += new System.EventHandler(this.digito4_ValueChanged);
-            this.digito4.ValueChanged += new System.EventHandler(this.digito4_ValueChanged_1);
+            this.digito4.Scroll += new System.EventHandler(this.Digito4_ValueChanged);
+            this.digito4.ValueChanged += new System.EventHandler(this.Digito4_ValueChanged_1);
             // 
             // label3
             // 
@@ -179,7 +178,7 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "5";
             this.label3.Visible = false;
-            this.label3.Click += new System.EventHandler(this.digito3_ValueChanged);
+            this.label3.Click += new System.EventHandler(this.Digito3_ValueChanged);
             // 
             // digito3
             // 
@@ -191,8 +190,8 @@
             this.digito3.TabIndex = 2;
             this.digito3.Value = 5;
             this.digito3.Visible = false;
-            this.digito3.Scroll += new System.EventHandler(this.digito3_ValueChanged);
-            this.digito3.ValueChanged += new System.EventHandler(this.digito3_ValueChanged_1);
+            this.digito3.Scroll += new System.EventHandler(this.Digito3_ValueChanged);
+            this.digito3.ValueChanged += new System.EventHandler(this.Digito3_ValueChanged_1);
             // 
             // label2
             // 
@@ -204,7 +203,7 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "5";
             this.label2.Visible = false;
-            this.label2.Click += new System.EventHandler(this.digito2_ValueChanged);
+            this.label2.Click += new System.EventHandler(this.Digito2_ValueChanged);
             // 
             // digito2
             // 
@@ -216,8 +215,8 @@
             this.digito2.TabIndex = 1;
             this.digito2.Value = 5;
             this.digito2.Visible = false;
-            this.digito2.Scroll += new System.EventHandler(this.digito2_ValueChanged);
-            this.digito2.ValueChanged += new System.EventHandler(this.digito2_ValueChanged_1);
+            this.digito2.Scroll += new System.EventHandler(this.Digito2_ValueChanged);
+            this.digito2.ValueChanged += new System.EventHandler(this.Digito2_ValueChanged_1);
             // 
             // label1
             // 
@@ -239,8 +238,8 @@
             this.digito1.Size = new System.Drawing.Size(144, 45);
             this.digito1.TabIndex = 0;
             this.digito1.Value = 5;
-            this.digito1.Scroll += new System.EventHandler(this.digito1_ValueChanged);
-            this.digito1.ValueChanged += new System.EventHandler(this.digito1_ValueChanged_1);
+            this.digito1.Scroll += new System.EventHandler(this.Digito1_ValueChanged);
+            this.digito1.ValueChanged += new System.EventHandler(this.Digito1_ValueChanged_1);
             // 
             // checkBox2
             // 
@@ -253,7 +252,7 @@
             this.checkBox2.Text = "Ok";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.Visible = false;
-            this.checkBox2.CheckStateChanged += new System.EventHandler(this.checkBox2_CheckStateChanged);
+            this.checkBox2.CheckStateChanged += new System.EventHandler(this.CheckBox2_CheckStateChanged);
             // 
             // checkBox4
             // 
@@ -266,7 +265,7 @@
             this.checkBox4.Text = "Ok";
             this.checkBox4.UseVisualStyleBackColor = true;
             this.checkBox4.Visible = false;
-            this.checkBox4.CheckStateChanged += new System.EventHandler(this.checkBox4_CheckStateChanged);
+            this.checkBox4.CheckStateChanged += new System.EventHandler(this.CheckBox4_CheckStateChanged);
             // 
             // button1
             // 
