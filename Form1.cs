@@ -12,10 +12,12 @@ namespace Cadeado_OO_1985419_5
 {
     public partial class Form1 : Form
     {
+        int matricula = 85419; //fazer encapsulamento geters and setters
         public Form1()
         {
             InitializeComponent();
         }
+        
         private void Digito1_ValueChanged(Object sender, EventArgs e){
             label1.Text = digito1.Value.ToString();
         }
@@ -131,8 +133,17 @@ namespace Cadeado_OO_1985419_5
         }
         private void Button1_Click(Object sender, EventArgs e)
         {
-
-
+            int senhaInformada = int.Parse(label1.Text) * 10000 + int.Parse(label2.Text) * 1000 + int.Parse(label3.Text) * 100 + int.Parse(label4.Text) * 10 + int.Parse(label5.Text);
+            label11.Text = senhaInformada.ToString();
+            label12.Text = matricula.ToString();
+            bool comp = label11.Text.Equals(label12.Text);
+            if (comp == true)
+            {
+                button1.Text = "Senha Correta!";
+            } else
+            {
+                button1.Text = "Senha Incorreta!";
+            }
         }
     }
 }
