@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Cadeado_OO_1985419_5
@@ -134,8 +128,8 @@ namespace Cadeado_OO_1985419_5
         private void Button1_Click(Object sender, EventArgs e)
         {
             int senhaInformada = int.Parse(label1.Text) * 10000 + int.Parse(label2.Text) * 1000 + int.Parse(label3.Text) * 100 + int.Parse(label4.Text) * 10 + int.Parse(label5.Text);
-            label11.Text = senhaInformada.ToString();
-            label12.Text = matricula.ToString();
+            label11.Text = senhaInformada.ToString(); //linha usada para testes
+            label12.Text = matricula.ToString(); //linha usada para testes
             bool comp = label11.Text.Equals(label12.Text);
             if (comp == true)
             {
@@ -144,6 +138,11 @@ namespace Cadeado_OO_1985419_5
             {
                 button1.Text = "Senha Incorreta!";
             }
+        }
+
+        private void Form1_HelpButtonClicked(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MessageBox.Show(" Atividade MAPA\n PARADIGMAS DE SOFTWARE\n RA 1985419-5\n", "Rodolfo Lucas Bortoluzzi",MessageBoxButtons.OK);
         }
     }
 }

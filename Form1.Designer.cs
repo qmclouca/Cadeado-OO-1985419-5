@@ -62,6 +62,8 @@
             // 
             // Segredo
             // 
+            this.Segredo.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.Segredo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Segredo.Controls.Add(this.checkBox5);
             this.Segredo.Controls.Add(this.checkBox3);
             this.Segredo.Controls.Add(this.checkBox1);
@@ -122,7 +124,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label5.Location = new System.Drawing.Point(157, 224);
             this.label5.Name = "label5";
@@ -148,7 +150,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.Location = new System.Drawing.Point(157, 173);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(15, 15);
@@ -173,7 +175,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Location = new System.Drawing.Point(157, 122);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(15, 15);
@@ -198,7 +200,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Location = new System.Drawing.Point(157, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(15, 15);
@@ -223,7 +225,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Location = new System.Drawing.Point(157, 19);
             this.label1.Name = "label1";
@@ -342,6 +344,7 @@
             this.label11.Size = new System.Drawing.Size(41, 13);
             this.label11.TabIndex = 18;
             this.label11.Text = "label11";
+            this.label11.Visible = false;
             // 
             // label12
             // 
@@ -351,12 +354,15 @@
             this.label12.Size = new System.Drawing.Size(41, 13);
             this.label12.TabIndex = 19;
             this.label12.Text = "label12";
+            this.label12.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(224, 443);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.CausesValidation = false;
+            this.ClientSize = new System.Drawing.Size(224, 441);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -378,7 +384,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadeado OO";
-            
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.Form1_HelpButtonClicked);
             this.Segredo.ResumeLayout(false);
             this.Segredo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.digito5)).EndInit();
